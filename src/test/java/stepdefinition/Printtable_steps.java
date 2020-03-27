@@ -13,7 +13,7 @@ public class Printtable_steps
 	{
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new PendingException();
-		t.url();
+		t.url("chrome");
 	}
 
 	@When("^the details are matched$")
