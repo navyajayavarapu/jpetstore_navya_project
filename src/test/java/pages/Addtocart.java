@@ -62,19 +62,20 @@ public class Addtocart //adding the item in cart
 	
 
 		}
+		// adding the item to the cart
 		public void jpet_cart() throws InterruptedException 
 		{
 			driver.findElement(animalid).click();
 			Thread.sleep(3000);
 			//driver.findElement(click).click();	
 		}
-
+		// click on add to cart
 		public void add() throws InterruptedException 
 		{
 			Thread.sleep(3000);
 			driver.findElement(addtocart).click();		
 		}
-
+		// to update cart
 		public void update() 
 		{
 			driver.findElement(updatecart).click();	
