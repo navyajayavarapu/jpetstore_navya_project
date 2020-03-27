@@ -71,25 +71,26 @@ public class Login  //login to the application
 		driver.get("https://petstore.octoperf.com/actions/Catalog.action");
 		System.out.println(driver.getTitle());
 		}
+		// opens the signin page
 		public void homepage() 
 		{
 			driver.findElement(signin).click();		
 		}
-		
+		// to enter username
 		public void Jpet_username(int i) throws IOException
 		{
 			//driver.findElement(username).sendKeys("navyajayavarapu");
 			ReadExcelsheet read=new ReadExcelsheet();
 			driver.findElement(username).sendKeys(read.Excel_Username(i));
 		}
-
+		// to enter password
 		public void Jpet_password(int i) throws IOException 
 		{
 			//driver.findElement(password).sendKeys("navya123");
 			ReadExcelsheet read=new ReadExcelsheet();
 			driver.findElement(password).sendKeys(read. Excel_password(i));	
 		}
-
+		// login to the application 
 		public void Login_click() throws InterruptedException //click on login button
 		{
 			driver.findElement(login).click();	
