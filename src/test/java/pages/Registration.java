@@ -85,6 +85,7 @@ public class Registration
 			
 			
 		}
+		// registration with valid details
 		public void enter_details()
 		{
 			driver.findElement(userid).sendKeys("navyajayavarapu");
