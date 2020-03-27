@@ -12,7 +12,7 @@ public class Addtocart_steps
 	public void the_details_of_the_required_animal_or_bird() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new PendingException();
-		list.url();
+		list.url("chrome");
 	}
 
 	@When("^the product id and name of the animal is added to the cart$")
