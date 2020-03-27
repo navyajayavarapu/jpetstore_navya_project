@@ -31,7 +31,7 @@ public class Printtable
 						driver=new ChromeDriver();
 					}
 							// To launch InternetExplorer
-					else if (browser.equalsIgnoreCase("Internet Explore")) {
+					else if (browser.equalsIgnoreCase("Internet Explorer")) {
 							System.setProperty("webdriver.ie.driver","D:\\Downloads\\IEDriverServer_Win32_3.150.1\\IEDriverServer.exe");
 						driver=new InternetExplorerDriver();  
 					}
@@ -59,6 +59,7 @@ public class Printtable
 	
 
 		}
+		// prints the selected product related matches as a table
 		public void jpet_print()
 		{
 			driver.findElement(animal).click();
