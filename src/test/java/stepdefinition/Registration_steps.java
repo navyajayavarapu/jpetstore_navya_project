@@ -13,7 +13,7 @@ public class Registration_steps {
 	{
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new PendingException();
-		data.url();
+		data.url("chrome");
 	}
 
 	@When("^Add the account information$")
