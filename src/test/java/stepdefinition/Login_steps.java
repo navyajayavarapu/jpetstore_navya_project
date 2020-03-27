@@ -20,7 +20,7 @@ public class Login_steps
 	{
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
-		obj.url();
+		obj.url("chrome");
 	}
 
 	@When("^opens the login page$")
