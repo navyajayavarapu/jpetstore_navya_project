@@ -35,48 +35,24 @@ public class Registration
 	By save_info=By.xpath("//*[@id=\"Catalog\"]/form/input");
 	
 	// to launch the browser
-	
-			public void browserLaunch(String browser,String url)
-			{
-				try {
-							//To launch firefox Browser
-					if (browser.equalsIgnoreCase("firefox")) {
-						System.setProperty("webdriver.gecko.driver","C:\\Users\\Personal\\Desktop\\navya-testcase-master\\src\\test\\resources\\drivers\\geckodriver.exe");
-						driver = new FirefoxDriver();
-					}
-							// To launch chrome Browser
-					else if (browser.equalsIgnoreCase("chrome")) 
-					{
-						System.setProperty("webdriver.chrome.driver","C:\\Users\\Personal\\Desktop\\navya-testcase-master\\src\\test\\resources\\drivers\\chromedriver.exe");
-						driver=new ChromeDriver();
-					}
-							// To launch InternetExplorer
-					else if (browser.equalsIgnoreCase("Internet Explore")) {
-							System.setProperty("webdriver.ie.driver","D:\\Downloads\\IEDriverServer_Win32_3.150.1\\IEDriverServer.exe");
-						driver=new InternetExplorerDriver();  
-					}
-							//to maximize the window
-					driver.manage().window().maximize(); 
-					driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-					driver.get(url);
-				
-				} 
-				
-				//if browser cannot be launched
-				catch (WebDriverException e) 
-				{
-					System.out.println("Browser could not be launched");
-				}
-			}
-			
-	public void url() 
+		public void url(String browser) 
 		{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Personal\\Desktop\\navya-testcase-master\\src\\test\\resources\\drivers\\chromedriver.exe");
+		if(browser.equalsIgnoreCase("chrome"))
+		{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\pooja\\Desktop\\navya\\Selenium_jar_files\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
+		}
+		else if(browser.equalsIgnoreCase("firefox"))
+		{
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\pooja\\Desktop\\navya\\Selenium_jar_files\\drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		driver.get("https://petstore.octoperf.com/actions/Catalog.action");
+		driver.get("https://petstore.octoperf.com/actions/Catalog.action?viewProduct=&productId=K9-BD-01");
 		System.out.println(driver.getTitle());
+	
+
 		}
 		public void register()
 		{
