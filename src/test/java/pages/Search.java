@@ -63,13 +63,14 @@ public class Search
 	
 
 		}
+		// searching for required product
 		public void jpet_search()
 		{
 			driver.findElement(searchbar).click();
 			driver.findElement(senddata).sendKeys("bulldog");
 			//driver.findElement(sclick).click();			
 		}
-
+		// selecting the product through product id
 		public void senddata() throws InterruptedException 
 		{
 			Thread.sleep(3000);
