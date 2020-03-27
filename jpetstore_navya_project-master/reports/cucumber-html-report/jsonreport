@@ -1,0 +1,338 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Registration to the application",
+        "description": "",
+        "id": "jpetstore-website;registration-to-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11702009637,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter user ID and password",
+            "match": {
+              "location": "Registration_steps.enter_user_ID_and_password()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2703848457,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Add the account information",
+            "match": {
+              "location": "Registration_steps.add_the_account_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1340613221,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Save the account inforamtion",
+            "match": {
+              "location": "Registration_steps.save_the_account_inforamtion()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2408060147,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Complete the registration",
+            "match": {
+              "location": "Registration_steps.complete_the_registration()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tc01_register"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Login to the Jpet store application",
+        "description": "",
+        "id": "jpetstore-website;login-to-the-jpet-store-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12922456180,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user launches the website in chrome browser",
+            "match": {
+              "location": "Login_steps.the_user_launches_the_website_in_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 883285544,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "opens the login page",
+            "match": {
+              "location": "Login_steps.opens_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26997450572,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter username and password",
+            "match": {
+              "location": "Login_steps.enter_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 148011394,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on login button",
+            "match": {
+              "location": "Login_steps.click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@tc02_Login"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Search for the animal in the application",
+        "description": "",
+        "id": "jpetstore-website;search-for-the-animal-in-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19183511942,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the search bar in the login page",
+            "match": {
+              "location": "Search_steps.the_search_bar_in_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129418170,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "search for the animal you are looking for",
+            "match": {
+              "location": "Search_steps.search_for_the_animal_you_are_looking_for()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14949003148,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "enter the product id and name in the search bar",
+            "match": {
+              "location": "Search_steps.enter_the_product_id_and_name_in_the_search_bar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61471705,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click on the search button",
+            "match": {
+              "location": "Search_steps.click_on_the_search_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@tc03_Search"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Add the animals or bird to the cart",
+        "description": "",
+        "id": "jpetstore-website;add-the-animals-or-bird-to-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5954122392,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the details of the required animal or bird",
+            "match": {
+              "location": "Addtocart_steps.the_details_of_the_required_animal_or_bird()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3548021891,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the product id and name of the animal is added to the cart",
+            "match": {
+              "location": "Addtocart_steps.the_product_id_and_name_of_the_animal_is_added_to_the_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3676575778,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "check the shopping cart",
+            "match": {
+              "location": "Addtocart_steps.check_the_shopping_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 582888857,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "contains the wish list",
+            "match": {
+              "location": "Addtocart_steps.contains_the_wish_list()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@tc04_addtocart"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Prints the details in a table",
+        "description": "",
+        "id": "jpetstore-website;prints-the-details-in-a-table",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11782589587,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the details of an animal in the homepage",
+            "match": {
+              "location": "Printtable_steps.the_details_of_an_animal_in_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61169,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the details are matched",
+            "match": {
+              "location": "Printtable_steps.the_details_are_matched()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1817977238,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the selected animals details are printed",
+            "match": {
+              "location": "Printtable_steps.the_selected_animals_details_are_printed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 290180854,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "details are printed in a table",
+            "match": {
+              "location": "Printtable_steps.details_are_printed_in_a_table()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 35,
+            "name": "@tc05_printtable"
+          }
+        ]
+      }
+    ],
+    "name": "Jpetstore website",
+    "description": "",
+    "id": "jpetstore-website",
+    "keyword": "Feature",
+    "uri": "src/main/resources/feature/testcase.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Jpetstore_Feature"
+      }
+    ]
+  }
+]
