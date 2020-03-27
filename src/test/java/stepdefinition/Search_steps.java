@@ -12,7 +12,7 @@ public class Search_steps
 	public void the_search_bar_in_the_login_page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
-		s.url();
+		s.url("chrome");
 	}
 
 	@When("^search for the animal you are looking for$")
